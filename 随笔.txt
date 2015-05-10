@@ -1,0 +1,180 @@
+﻿lamp
+	Linux+Apache+Mysql/MariaDB+Perl/PHP/Python
+
+minidwep-gtk
+reaver
+compiz
+Splashy    开机画面
+
+窗口管理器
+	 e17   Enlightenment  
+	 mutter
+	 openbox
+IDE
+	Geany
+	Codelite
+
+timer-applet    倒计时
+gnome-pie       快捷启动
+grub-customizer  引导管理
+jockey-gtk     驱动管理
+gdebi     本地deb包安装
+compizconfig-settings-manager
+bc
+7zip
+chmsee
+aria2 uget
+NTFS-3G
+vsftpd   高效ftp服务器   vi /etc/vsftpd/vsftpd.conf
+
+安装xorg最好使用sudo aptitude install xserver-xorg，用apt-get install的话生成xorg.conf时有问题。
+
+/etc/inittab
+/etc/rc.d/rc.sysinit
+/etc/sysconfig/network
+/etc/modules.conf文件或/etc/modules.d
+/etc/rc.d/rc.local
+在系统启动过程中主要的脚本和目录有:
+boot
+/grub
+/boot/grub/grub.conf
+/boot/initrd+内核版本
+/initrd文件中的/proc/ /sys/ /dev/ 目录的挂载 及根的切换
+/etc/inittab 脚本
+/etc/rc.d/rc.sysinit 脚本 等
+
+关于网络的配置文件有:
+
+    主机地址配置文件:/etc/hosts
+    网络服务信息文件:/etc/services
+    允许与拒绝地址配置文件:/etc/hosts.allow和/etc/hosts.deny
+    网络配置文件:/etc/sysconfig/network
+    主机查找配置文件:/etc/host.conf
+    名称服务器查找顺序配置文件:/etc/resolv.conf
+    网卡参数配置文件:/etc/sysconfig/network-scrips/ifcfg-eth0
+
+
+～/.config/autostart（推荐）或 /etc/xdg/autostart
+
+deb http://www.remastersys.com/ubuntu precise main 
+
+
+
+	sudo add-apt-repository ppa:mc3man/trusty-media
+	sudo apt-get update
+	sudo apt-get install gstreamer0.10-ffmpeg
+
+	sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make	
+	sudo apt-get update && sudo apt-get install ubuntu-make
+	umake web visual-studio-code
+
+	sudo add-apt-repository ppa:tomahawk/ppa 
+	sudo apt-get update && sudo apt-get install tomahawk
+
+	sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+	sudo apt-get update
+	sudo apt-get install grub-customizer
+
+    sudo apt-add-repository ppa:numix/ppa
+    sudo apt-get update
+    sudo apt-get install numix-icon-theme-circle
+	
+	sudo add-apt-repository ppa:satyajit-happy/themes
+    sudo apt-get update
+    sudo apt-get install gnome-shell-theme-elegance-colors
+	
+	sudo add-apt-repository ppa:moka/stable
+    sudo apt-get update
+    sudo apt-get install moka-gnome-shell-theme
+	
+	sudo add-apt-repository ppa:tiheum/equinox
+    sudo apt-get update
+    sudo apt-get install faience-theme
+	
+	sudo add-apt-repository ppa:snwh/pulp
+    sudo apt-get update
+    sudo apt-get install paper-gtk-theme
+	
+	sudo add-apt-repository ppa:team-xbmc/ppa
+    sudo apt-get update
+    sudo apt-get install kodi
+	sudo apt-get install kodi-audioencoder-* kodi-pvr-*
+	
+	sudo add-apt-repository ppa:damien-moore/ppa
+    sudo apt-get update
+    sudo apt-get install picty
+	
+	sudo add-apt-repository ppa:forkotov02/ppa
+	sudo apt-get update
+	sudo apt-get install qmmp
+	sudo apt-get install qmmp-plugin-pack
+	
+	sudo add-apt-repository ppa:webupd8team/sublime-text-3
+	sudo apt-get update
+	sudo apt-get install sublime-text-installer
+	
+	sudo add-apt-repository ppa:wayland.admin/daily-builds
+	sudo apt-get update
+	sudo apt-get install xwayland weston
+	
+	sudo add-apt-repository ppa:mank319/go-for-it && sudo apt-get update 
+	sudo apt-get install go-for-it
+		
+	
+	
+
+visudo   vi /etc/sudoers
+		cmnd_Alias nopermit=/sbin/shutdown,/sbin/reboot
+		cmnd_Alias permit=/usr/sbin/useradd,/usr/sbin/userdel
+		debian ALL=(ALL) permit
+		user ALL=(ALL) ALL,!nopermit			root 权限（no shutdownreboot）
+		user ALL=(ALL) ALL						root 权限
+cron	vi /etc/crontab        计划任务
+		crontab -l,-e,-u user -l,-r,-i -r,
+		minute  hour  day  month  week  command
+		30 4 * * * /home/user/****.sh
+		@reboot
+		@daily
+		@weekly  command1 && command2
+		@yearly
+		@daily
+ownCloud   个人云
+		
+		
+		
+
+
+
+sort   dir1 dir2  排序
+	-r  逆序
+	-nk2   第二列数值排序
+	-u  排重
+
+
+动漫      琴浦小姐
+
+画师		Ryota-H
+			Racoona
+			324716
+			1268438
+唱见		  坂本真绫 maaya
+			水树奈奈
+			中岛爱
+			牧野由依
+			
+			喜多村英梨
+			
+			
+漫画  
+轻小说		  
+
+		iptd
+		ipz
+		idbd
+		
+		波多野花结彩衣，苍山有井独自空，星落天川遥映瞳。
+		小溪流泉映花彩，松江孤岛一叶枫。
+		南海涟波潭边杏，樱花尽朱落无音。
+		神仙谷内美人姬，饭尽之岛爱成梦。
+		西塞山野雁自翔，小桥水泽浸芳园。
+		武园枯藤空留兰，李氏眉宇尽是春。
